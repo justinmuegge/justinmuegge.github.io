@@ -81,6 +81,13 @@ body {
     display: block;
 }
 
+.gallery-item .caption {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
 .cv-content {
     max-width: 800px;
     line-height: 1.8;
