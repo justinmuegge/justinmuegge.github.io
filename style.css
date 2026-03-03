@@ -74,9 +74,66 @@ body {
     display: block;
 }
 
+.home-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.home-bio {
+    flex: 0 0 280px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+    padding-top: 10px;
+}
+
+.home-layout .hero-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.artist-statement {
+    max-width: 700px;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.artist-statement p {
+    margin-bottom: 18px;
+}
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 50px 0;
+}
+
+.cv-content a {
+    color: #333;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.cv-content a:hover {
+    opacity: 0.6;
+}
+
 .gallery {
     max-width: 900px;
     margin: 0 auto;
+}
+
+.exhibition-header {
+    margin-bottom: 60px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+    text-align: center;
 }
 
 .gallery-item {
@@ -146,5 +203,15 @@ body {
     
     .hero-image img {
         max-height: 70vh;
+    }
+    
+    .home-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .home-bio {
+        flex: none;
+        width: 100%;
     }
 }
